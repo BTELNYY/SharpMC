@@ -7,7 +7,7 @@ namespace SharpMC
 		private static SharpMcServer _server;
 		static void Main(string[] args)
 		{
-			_server= new SharpMcServer();
+			_server = new SharpMcServer();
 			_server.StartServer();
 		}
 	}

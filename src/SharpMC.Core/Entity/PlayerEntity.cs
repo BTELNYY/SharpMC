@@ -57,10 +57,15 @@ namespace SharpMC.Core.Entity
 			Length = 0.6;
 			IsOperator = false;
 			Loaded = false;
-		}
+        }
 
-		public string Username { get; set; } //The player's username
-		public string Uuid { get; set; } // The player's UUID
+        public string Username { get; set; } //The player's username
+        public int Heatlh { get; set; } //get the health of the player.
+        public double Saturation { get; set; } //hunger nonsense
+        public double Hunger { get; set; }
+        public int XPLevel { get; set; }
+		public int XP { get; set; }
+        public string Uuid { get; set; } // The player's UUID
 		public ClientWrapper Wrapper { get; set; } //The player's associated ClientWrapper
 		public Gamemode Gamemode { get; set; } //The player's gamemode
 		public bool IsSpawned { get; set; } //Is the player spawned?
@@ -83,7 +88,7 @@ namespace SharpMC.Core.Entity
 		{
 			if (ServerSettings.OnlineMode)
 			{
-				try
+				try //this shit dont work but I can try.
 				{
 					var uri = new Uri(
 						string.Format(
@@ -188,7 +193,7 @@ namespace SharpMC.Core.Entity
 		}
 
 		#endregion
-
+		//inventory.
 		public void BroadcastEquipment()
 		{
 			//Main Hand

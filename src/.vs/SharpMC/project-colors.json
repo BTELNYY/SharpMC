@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4eaf641d-6367-44ba-a522-f5a2ca5822ad": {
+      "ProjectGuid": "4eaf641d-6367-44ba-a522-f5a2ca5822ad",
+      "DisplayName": "SharpMC",
+      "ColorIndex": 0
+    },
+    "089aba36-c58c-40c3-8f88-988bea720974": {
+      "ProjectGuid": "089aba36-c58c-40c3-8f88-988bea720974",
+      "DisplayName": "SharpMC.Core",
+      "ColorIndex": 1
+    },
+    "49988812-4913-40e4-8a83-66607fbd7309": {
+      "ProjectGuid": "49988812-4913-40e4-8a83-66607fbd7309",
+      "DisplayName": "SharpMC.API",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
